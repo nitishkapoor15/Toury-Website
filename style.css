@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: gilroy;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+   
+}
+
+body{
+    overflow-x:hidden ;
+    overflow-y: auto;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #000;
+    background-image: url("./mountain.jpg");
+    background-size: cover;
+    background-position:50% 70%;
+    
+}
+
+
+#page3{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #000;
+}
+
+#nav{
+    height: 100px;
+    width: 100vw;
+    /* background-color: turquoise */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+
+
+#nav-part2{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+#nav h1{
+    font-size: 30px;
+}
+
+#nav h4{
+    font-size: 20px;
+}
+
+#nav button{
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: grey;
+
+}
+
+#page1-content{
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding: 110px 100px;
+  background: linear-gradient(transparent,rgb(0,0,0,0.728));
+
+}
+
+
+#page1-content h1{
+    font-size: 3vw;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+#page1-content p{
+    font-size: 1.25vw;
+    text-transform: capitalize;
+    width: 38%;
+    margin-bottom: 60px;
+   
+}
+
+#page1-content button{
+    padding: 14px 30px;
+    background-color: rgba(255, 68, 0, 0.884);
+    border: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #000;
+    padding: 140px 120px;
+     overflow: hidden;
+}
+
+#page2 h1{
+    font-size: 1.8vw;
+}
+
+#page2-div{
+    height: 400px;
+    width: 100%;
+    margin: 50px 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+ 
+}
+
+
+#page2-div::-webkit-scrollbar{
+    display: none;
+}
+
+.elem{
+    height: 100%;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+.elem img:hover{
+    scale: 1.2;
+}
+
+.elem:hover h3{
+    opacity: 1;
+}
+.elem:hover h4{
+    opacity: 1;
+}
+
+.elem h4{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    bottom: 30%;
+    transition: all ease 0.2s;
+    left: 10%;
+    font-weight: 400;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.elem h3{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    bottom: 15%;
+    font-weight:400;
+    transition: all ease 0.2s;
+    left: 10%;
+    width: 80%;
+    white-space: break-spaces;
+    opacity: 0;
+}
